@@ -4,10 +4,8 @@
 #include "persistence.h"
 
 #include <cstdio>       // std::remove
-#include <filesystem>   // std::filesystem::rename (C++17)
 #include <fstream>
 #include <iostream>
-#include <system_error>
 
 namespace {
 // Helper used by Load: report a corrupt file and give back an empty result.
@@ -44,14 +42,12 @@ bool Persistence::Save(const std::string& file, const std::vector<KeyValue>& rec
 
     // Step 2: rename tmp over the real file. Rename is one step, so we end up
     // with either the complete new file or the complete old file, never half.
-    std::error_code ec;
-    std::filesystem::rename(tmp, file, ec);
-    if (ec) {
-        // Some Windows setups refuse to overwrite: delete the target and retry.
+    // (std::rename is plain C++, it works with old compilers too.)
+    if (std::rename(tmp.c_str(), file.c_str()) != 0) {
+        // On Windows, rename fails if the target already exists:
+        // delete the old file and try again.
         std::remove(file.c_str());
-        ec.clear();
-        std::filesystem::rename(tmp, file, ec);
-        if (ec) {
+        if (std::rename(tmp.c_str(), file.c_str()) != 0) {
             std::remove(tmp.c_str());
             return false;
         }
