@@ -1,104 +1,156 @@
 // ============================================================================
-// persistence.cpp  -  implementation of Persistence (see persistence.h)
+// test_persistence.cpp  -  tests for Persistence::Save / Persistence::Load
 // ============================================================================
 #include "persistence.h"
 
-#include <cstdio>       // std::remove
-#include <filesystem>   // std::filesystem::rename (C++17)
+#include <cstdio>
 #include <fstream>
 #include <iostream>
-#include <system_error>
+#include <string>
+#include <vector>
 
-namespace {
-// Helper used by Load: report a corrupt file and give back an empty result.
-bool Fail(std::vector<KeyValue>* out, const char* why) {
-    out->clear();
-    std::cerr << "ERROR: data file is corrupt (" << why << "). Starting empty.\n";
-    return false;
-}
-}  // namespace
+static int g_failed = 0;
 
-bool Persistence::Save(const std::string& file, const std::vector<KeyValue>& records) {
-    // Step 1: write everything to a TEMPORARY file first.
-    const std::string tmp = file + ".tmp";
-    {
-        // binary mode: no newline translation, bytes are written exactly as they are.
-        std::ofstream out(tmp, std::ios::binary | std::ios::trunc);
-        if (!out) return false;
+#define CHECK(cond)                                                        \
+    do {                                                                   \
+        if (!(cond)) {                                                     \
+            std::cerr << "FAIL line " << __LINE__ << ": " #cond << "\n";   \
+            ++g_failed;                                                    \
+        }                                                                  \
+    } while (0)
 
-        out << "MINIDB 1\n" << records.size() << '\n';
-        for (const KeyValue& kv : records) {
-            // <key> <length> <exact value bytes> newline
-            out << kv.first << ' ' << kv.second.size() << ' ';
-            out.write(kv.second.data(), static_cast<std::streamsize>(kv.second.size()));
-            out << '\n';
-        }
+static const char* kFile = "test_persistence_tmp.db";
 
-        out.flush();
-        if (!out) {  // some write failed (disk full, etc.)
-            out.close();
-            std::remove(tmp.c_str());  // do not leave a half-written temp file
-            return false;
-        }
-    }  // the file is closed here (scope ends)
-
-    // Step 2: rename tmp over the real file. Rename is one step, so we end up
-    // with either the complete new file or the complete old file, never half.
-    std::error_code ec;
-    std::filesystem::rename(tmp, file, ec);
-    if (ec) {
-        // Some Windows setups refuse to overwrite: delete the target and retry.
-        std::remove(file.c_str());
-        ec.clear();
-        std::filesystem::rename(tmp, file, ec);
-        if (ec) {
-            std::remove(tmp.c_str());
-            return false;
-        }
-    }
-    return true;
+static void Cleanup() {
+    std::remove(kFile);
+    std::remove((std::string(kFile) + ".tmp").c_str());
 }
 
-bool Persistence::Load(const std::string& file, std::vector<KeyValue>* out) {
-    out->clear();
+// 1) Save then Load gives back exactly the same records.
+static void TestRoundTrip() {
+    Cleanup();
+    std::vector<KeyValue> in;
+    in.push_back(KeyValue(1, "hello"));
+    in.push_back(KeyValue(2, "world"));
+    in.push_back(KeyValue(3, "third"));
 
-    std::ifstream in(file, std::ios::binary);
-    if (!in) return true;  // file does not exist: first run, start empty
+    CHECK(Persistence::Save(kFile, in));
 
-    // Remember the file size: a record can never be longer than the whole file.
-    // (Protects us from a corrupt length like 99999999999.)
-    in.seekg(0, std::ios::end);
-    const unsigned long long total = static_cast<unsigned long long>(in.tellg());
-    in.seekg(0, std::ios::beg);
-
-    // ---- Header: "MINIDB 1" newline, record count, newline -----------------
-    std::string magic;
-    int version = 0;
-    unsigned long long count = 0;
-    char c = 0;
-    if (!(in >> magic >> version >> count) || magic != "MINIDB" || version != 1)
-        return Fail(out, "bad header");
-    if (!in.get(c) || c != '\n') return Fail(out, "bad header");
-
-    // ---- Records ----------------------------------------------------------
-    for (unsigned long long i = 0; i < count; ++i) {
-        Key key = 0;
-        unsigned long long len = 0;
-
-        if (!(in >> key >> len)) return Fail(out, "bad record");  // key + length
-        if (!in.get(c) || c != ' ') return Fail(out, "bad record");  // the one space
-        if (len > total) return Fail(out, "bad length");
-
-        // Read EXACTLY len bytes, whatever they are (spaces, newlines, ...).
-        std::string value(static_cast<size_t>(len), '\0');
-        if (len > 0) {
-            in.read(&value[0], static_cast<std::streamsize>(len));
-            if (static_cast<unsigned long long>(in.gcount()) != len)
-                return Fail(out, "truncated value");  // file ended too early
-        }
-
-        if (!in.get(c) || c != '\n') return Fail(out, "bad record end");
-        out->emplace_back(key, value);
+    std::vector<KeyValue> out;
+    CHECK(Persistence::Load(kFile, &out));
+    CHECK(out.size() == in.size());
+    for (size_t i = 0; i < in.size() && i < out.size(); ++i) {
+        CHECK(out[i].first == in[i].first);
+        CHECK(out[i].second == in[i].second);
     }
-    return true;
+    Cleanup();
+}
+
+// 2) Values with spaces, newlines and empty values survive.
+static void TestTrickyValues() {
+    Cleanup();
+    std::vector<KeyValue> in;
+    in.push_back(KeyValue(10, "has some spaces"));
+    in.push_back(KeyValue(11, "line1\nline2\nline3"));
+    in.push_back(KeyValue(12, ""));
+    in.push_back(KeyValue(13, "  leading and trailing  "));
+
+    CHECK(Persistence::Save(kFile, in));
+
+    std::vector<KeyValue> out;
+    CHECK(Persistence::Load(kFile, &out));
+    CHECK(out.size() == in.size());
+    for (size_t i = 0; i < in.size() && i < out.size(); ++i) {
+        CHECK(out[i].first == in[i].first);
+        CHECK(out[i].second == in[i].second);
+    }
+    Cleanup();
+}
+
+// 3) Saving over an existing file replaces it completely.
+static void TestOverwrite() {
+    Cleanup();
+    std::vector<KeyValue> first;
+    first.push_back(KeyValue(1, "old"));
+    first.push_back(KeyValue(2, "old2"));
+    CHECK(Persistence::Save(kFile, first));
+
+    std::vector<KeyValue> second;
+    second.push_back(KeyValue(5, "new"));
+    CHECK(Persistence::Save(kFile, second));
+
+    std::vector<KeyValue> out;
+    CHECK(Persistence::Load(kFile, &out));
+    CHECK(out.size() == 1);
+    if (!out.empty()) {
+        CHECK(out[0].first == 5);
+        CHECK(out[0].second == "new");
+    }
+    Cleanup();
+}
+
+// 4) Missing file = first run: Load succeeds with empty result.
+static void TestMissingFile() {
+    Cleanup();
+    std::vector<KeyValue> out;
+    out.push_back(KeyValue(99, "junk"));  // must be cleared by Load
+    CHECK(Persistence::Load(kFile, &out));
+    CHECK(out.empty());
+}
+
+// 5) Empty list can be saved and loaded.
+static void TestEmptyList() {
+    Cleanup();
+    std::vector<KeyValue> in;
+    CHECK(Persistence::Save(kFile, in));
+
+    std::vector<KeyValue> out;
+    CHECK(Persistence::Load(kFile, &out));
+    CHECK(out.empty());
+    Cleanup();
+}
+
+// 6) Corrupt files are rejected and give an empty result.
+static void TestCorruptFile() {
+    Cleanup();
+
+    {  // bad header
+        std::ofstream f(kFile, std::ios::binary | std::ios::trunc);
+        f << "NOTMINIDB 1\n0\n";
+    }
+    std::vector<KeyValue> out;
+    CHECK(!Persistence::Load(kFile, &out));
+    CHECK(out.empty());
+
+    {  // truncated value: says 50 bytes but file ends early
+        std::ofstream f(kFile, std::ios::binary | std::ios::trunc);
+        f << "MINIDB 1\n1\n7 50 short\n";
+    }
+    CHECK(!Persistence::Load(kFile, &out));
+    CHECK(out.empty());
+
+    {  // absurd length
+        std::ofstream f(kFile, std::ios::binary | std::ios::trunc);
+        f << "MINIDB 1\n1\n7 99999999999 x\n";
+    }
+    CHECK(!Persistence::Load(kFile, &out));
+    CHECK(out.empty());
+
+    Cleanup();
+}
+
+int main() {
+    TestRoundTrip();
+    TestTrickyValues();
+    TestOverwrite();
+    TestMissingFile();
+    TestEmptyList();
+    TestCorruptFile();
+
+    if (g_failed == 0) {
+        std::cout << "All persistence tests passed.\n";
+        return 0;
+    }
+    std::cerr << g_failed << " check(s) failed.\n";
+    return 1;
 }

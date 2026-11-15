@@ -1,0 +1,182 @@
+Start testing: Nov 15 14:53 Pakistan Standard Time
+----------------------------------------------------------
+1/11 Testing: test_cli
+1/11 Test: test_cli
+Command: "C:/Users/ADMIN/Documents/GitHub/Database-Engine/build/test_cli.exe"
+Directory: C:/Users/ADMIN/Documents/GitHub/Database-Engine/build
+"test_cli" start time: Nov 15 14:53 Pakistan Standard Time
+Output:
+----------------------------------------------------------
+All CLI tests passed.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"test_cli" end time: Nov 15 14:53 Pakistan Standard Time
+"test_cli" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/11 Testing: test_database
+2/11 Test: test_database
+Command: "C:/Users/ADMIN/Documents/GitHub/Database-Engine/build/test_database.exe"
+Directory: C:/Users/ADMIN/Documents/GitHub/Database-Engine/build
+"test_database" start time: Nov 15 14:53 Pakistan Standard Time
+Output:
+----------------------------------------------------------
+All Database tests passed.
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"test_database" end time: Nov 15 14:53 Pakistan Standard Time
+"test_database" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/11 Testing: test_hash_table
+3/11 Test: test_hash_table
+Command: "C:/Users/ADMIN/Documents/GitHub/Database-Engine/build/test_hash_table.exe"
+Directory: C:/Users/ADMIN/Documents/GitHub/Database-Engine/build
+"test_hash_table" start time: Nov 15 14:53 Pakistan Standard Time
+Output:
+----------------------------------------------------------
+test_hash_table: all passed
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"test_hash_table" end time: Nov 15 14:53 Pakistan Standard Time
+"test_hash_table" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/11 Testing: test_index_crosscheck
+4/11 Test: test_index_crosscheck
+Command: "C:/Users/ADMIN/Documents/GitHub/Database-Engine/build/test_index_crosscheck.exe"
+Directory: C:/Users/ADMIN/Documents/GitHub/Database-Engine/build
+"test_index_crosscheck" start time: Nov 15 14:53 Pakistan Standard Time
+Output:
+----------------------------------------------------------
+All index cross-check tests passed.
+<end of output>
+Test time =   1.70 sec
+----------------------------------------------------------
+Test Passed.
+"test_index_crosscheck" end time: Nov 15 14:53 Pakistan Standard Time
+"test_index_crosscheck" time elapsed: 00:00:01
+----------------------------------------------------------
+
+5/11 Testing: test_linked_list_index
+5/11 Test: test_linked_list_index
+Command: "C:/Users/ADMIN/Documents/GitHub/Database-Engine/build/test_linked_list_index.exe"
+Directory: C:/Users/ADMIN/Documents/GitHub/Database-Engine/build
+"test_linked_list_index" start time: Nov 15 14:53 Pakistan Standard Time
+Output:
+----------------------------------------------------------
+All LinkedListIndex tests passed.
+<end of output>
+Test time =   0.53 sec
+----------------------------------------------------------
+Test Passed.
+"test_linked_list_index" end time: Nov 15 14:53 Pakistan Standard Time
+"test_linked_list_index" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/11 Testing: test_lru_cache
+6/11 Test: test_lru_cache
+Command: "C:/Users/ADMIN/Documents/GitHub/Database-Engine/build/test_lru_cache.exe"
+Directory: C:/Users/ADMIN/Documents/GitHub/Database-Engine/build
+"test_lru_cache" start time: Nov 15 14:53 Pakistan Standard Time
+Output:
+----------------------------------------------------------
+test_lru_cache: all passed
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"test_lru_cache" end time: Nov 15 14:53 Pakistan Standard Time
+"test_lru_cache" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/11 Testing: test_parser
+7/11 Test: test_parser
+Command: "C:/Users/ADMIN/Documents/GitHub/Database-Engine/build/test_parser.exe"
+Directory: C:/Users/ADMIN/Documents/GitHub/Database-Engine/build
+"test_parser" start time: Nov 15 14:53 Pakistan Standard Time
+Output:
+----------------------------------------------------------
+All parser tests passed.
+<end of output>
+Test time =   0.19 sec
+----------------------------------------------------------
+Test Passed.
+"test_parser" end time: Nov 15 14:53 Pakistan Standard Time
+"test_parser" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/11 Testing: test_persistence
+8/11 Test: test_persistence
+Command: "C:/Users/ADMIN/Documents/GitHub/Database-Engine/build/test_persistence.exe"
+Directory: C:/Users/ADMIN/Documents/GitHub/Database-Engine/build
+"test_persistence" start time: Nov 15 14:53 Pakistan Standard Time
+Output:
+----------------------------------------------------------
+ERROR: data file is corrupt (bad header). Starting empty.
+ERROR: data file is corrupt (bad length). Starting empty.
+ERROR: data file is corrupt (bad length). Starting empty.
+All persistence tests passed.
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"test_persistence" end time: Nov 15 14:53 Pakistan Standard Time
+"test_persistence" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/11 Testing: test_sorted_array_index
+9/11 Test: test_sorted_array_index
+Command: "C:/Users/ADMIN/Documents/GitHub/Database-Engine/build/test_sorted_array_index.exe"
+Directory: C:/Users/ADMIN/Documents/GitHub/Database-Engine/build
+"test_sorted_array_index" start time: Nov 15 14:53 Pakistan Standard Time
+Output:
+----------------------------------------------------------
+All SortedArrayIndex tests passed.
+<end of output>
+Test time =   0.31 sec
+----------------------------------------------------------
+Test Passed.
+"test_sorted_array_index" end time: Nov 15 14:53 Pakistan Standard Time
+"test_sorted_array_index" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/11 Testing: test_sorting
+10/11 Test: test_sorting
+Command: "C:/Users/ADMIN/Documents/GitHub/Database-Engine/build/test_sorting.exe"
+Directory: C:/Users/ADMIN/Documents/GitHub/Database-Engine/build
+"test_sorting" start time: Nov 15 14:53 Pakistan Standard Time
+Output:
+----------------------------------------------------------
+All sorting tests passed.
+<end of output>
+Test time =   0.53 sec
+----------------------------------------------------------
+Test Passed.
+"test_sorting" end time: Nov 15 14:53 Pakistan Standard Time
+"test_sorting" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/11 Testing: test_stack_queue
+11/11 Test: test_stack_queue
+Command: "C:/Users/ADMIN/Documents/GitHub/Database-Engine/build/test_stack_queue.exe"
+Directory: C:/Users/ADMIN/Documents/GitHub/Database-Engine/build
+"test_stack_queue" start time: Nov 15 14:53 Pakistan Standard Time
+Output:
+----------------------------------------------------------
+All Stack and CircularQueue tests passed.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"test_stack_queue" end time: Nov 15 14:53 Pakistan Standard Time
+"test_stack_queue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 15 14:53 Pakistan Standard Time
