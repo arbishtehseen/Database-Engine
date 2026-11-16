@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ADMIN\Documents\GitHub\Database-Engine
+CMAKE_SOURCE_DIR = C:\Users\ADMIN\Documents\GitHub\Database-Enginee
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ADMIN\Documents\GitHub\Database-Engine\build
+CMAKE_BINARY_DIR = C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/minidb_lib.dir/depend.make
@@ -73,123 +73,123 @@ CMakeFiles/minidb_lib.dir/codegen:
 
 CMakeFiles/minidb_lib.dir/cli.cpp.obj: CMakeFiles/minidb_lib.dir/flags.make
 CMakeFiles/minidb_lib.dir/cli.cpp.obj: CMakeFiles/minidb_lib.dir/includes_CXX.rsp
-CMakeFiles/minidb_lib.dir/cli.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Engine/cli.cpp
+CMakeFiles/minidb_lib.dir/cli.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Enginee/cli.cpp
 CMakeFiles/minidb_lib.dir/cli.cpp.obj: CMakeFiles/minidb_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minidb_lib.dir/cli.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/cli.cpp.obj -MF CMakeFiles\minidb_lib.dir\cli.cpp.obj.d -o CMakeFiles\minidb_lib.dir\cli.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Engine\cli.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minidb_lib.dir/cli.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/cli.cpp.obj -MF CMakeFiles\minidb_lib.dir\cli.cpp.obj.d -o CMakeFiles\minidb_lib.dir\cli.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Enginee\cli.cpp
 
 CMakeFiles/minidb_lib.dir/cli.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minidb_lib.dir/cli.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Engine\cli.cpp > CMakeFiles\minidb_lib.dir\cli.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Enginee\cli.cpp > CMakeFiles\minidb_lib.dir\cli.cpp.i
 
 CMakeFiles/minidb_lib.dir/cli.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minidb_lib.dir/cli.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Engine\cli.cpp -o CMakeFiles\minidb_lib.dir\cli.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Enginee\cli.cpp -o CMakeFiles\minidb_lib.dir\cli.cpp.s
 
 CMakeFiles/minidb_lib.dir/database.cpp.obj: CMakeFiles/minidb_lib.dir/flags.make
 CMakeFiles/minidb_lib.dir/database.cpp.obj: CMakeFiles/minidb_lib.dir/includes_CXX.rsp
-CMakeFiles/minidb_lib.dir/database.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Engine/database.cpp
+CMakeFiles/minidb_lib.dir/database.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Enginee/database.cpp
 CMakeFiles/minidb_lib.dir/database.cpp.obj: CMakeFiles/minidb_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/minidb_lib.dir/database.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/database.cpp.obj -MF CMakeFiles\minidb_lib.dir\database.cpp.obj.d -o CMakeFiles\minidb_lib.dir\database.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Engine\database.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/minidb_lib.dir/database.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/database.cpp.obj -MF CMakeFiles\minidb_lib.dir\database.cpp.obj.d -o CMakeFiles\minidb_lib.dir\database.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Enginee\database.cpp
 
 CMakeFiles/minidb_lib.dir/database.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minidb_lib.dir/database.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Engine\database.cpp > CMakeFiles\minidb_lib.dir\database.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Enginee\database.cpp > CMakeFiles\minidb_lib.dir\database.cpp.i
 
 CMakeFiles/minidb_lib.dir/database.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minidb_lib.dir/database.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Engine\database.cpp -o CMakeFiles\minidb_lib.dir\database.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Enginee\database.cpp -o CMakeFiles\minidb_lib.dir\database.cpp.s
 
 CMakeFiles/minidb_lib.dir/linked_list_index.cpp.obj: CMakeFiles/minidb_lib.dir/flags.make
 CMakeFiles/minidb_lib.dir/linked_list_index.cpp.obj: CMakeFiles/minidb_lib.dir/includes_CXX.rsp
-CMakeFiles/minidb_lib.dir/linked_list_index.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Engine/linked_list_index.cpp
+CMakeFiles/minidb_lib.dir/linked_list_index.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Enginee/linked_list_index.cpp
 CMakeFiles/minidb_lib.dir/linked_list_index.cpp.obj: CMakeFiles/minidb_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/minidb_lib.dir/linked_list_index.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/linked_list_index.cpp.obj -MF CMakeFiles\minidb_lib.dir\linked_list_index.cpp.obj.d -o CMakeFiles\minidb_lib.dir\linked_list_index.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Engine\linked_list_index.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/minidb_lib.dir/linked_list_index.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/linked_list_index.cpp.obj -MF CMakeFiles\minidb_lib.dir\linked_list_index.cpp.obj.d -o CMakeFiles\minidb_lib.dir\linked_list_index.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Enginee\linked_list_index.cpp
 
 CMakeFiles/minidb_lib.dir/linked_list_index.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minidb_lib.dir/linked_list_index.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Engine\linked_list_index.cpp > CMakeFiles\minidb_lib.dir\linked_list_index.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Enginee\linked_list_index.cpp > CMakeFiles\minidb_lib.dir\linked_list_index.cpp.i
 
 CMakeFiles/minidb_lib.dir/linked_list_index.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minidb_lib.dir/linked_list_index.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Engine\linked_list_index.cpp -o CMakeFiles\minidb_lib.dir\linked_list_index.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Enginee\linked_list_index.cpp -o CMakeFiles\minidb_lib.dir\linked_list_index.cpp.s
 
 CMakeFiles/minidb_lib.dir/lru_cache.cpp.obj: CMakeFiles/minidb_lib.dir/flags.make
 CMakeFiles/minidb_lib.dir/lru_cache.cpp.obj: CMakeFiles/minidb_lib.dir/includes_CXX.rsp
-CMakeFiles/minidb_lib.dir/lru_cache.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Engine/lru_cache.cpp
+CMakeFiles/minidb_lib.dir/lru_cache.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Enginee/lru_cache.cpp
 CMakeFiles/minidb_lib.dir/lru_cache.cpp.obj: CMakeFiles/minidb_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/minidb_lib.dir/lru_cache.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/lru_cache.cpp.obj -MF CMakeFiles\minidb_lib.dir\lru_cache.cpp.obj.d -o CMakeFiles\minidb_lib.dir\lru_cache.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Engine\lru_cache.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/minidb_lib.dir/lru_cache.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/lru_cache.cpp.obj -MF CMakeFiles\minidb_lib.dir\lru_cache.cpp.obj.d -o CMakeFiles\minidb_lib.dir\lru_cache.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Enginee\lru_cache.cpp
 
 CMakeFiles/minidb_lib.dir/lru_cache.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minidb_lib.dir/lru_cache.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Engine\lru_cache.cpp > CMakeFiles\minidb_lib.dir\lru_cache.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Enginee\lru_cache.cpp > CMakeFiles\minidb_lib.dir\lru_cache.cpp.i
 
 CMakeFiles/minidb_lib.dir/lru_cache.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minidb_lib.dir/lru_cache.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Engine\lru_cache.cpp -o CMakeFiles\minidb_lib.dir\lru_cache.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Enginee\lru_cache.cpp -o CMakeFiles\minidb_lib.dir\lru_cache.cpp.s
 
 CMakeFiles/minidb_lib.dir/parser.cpp.obj: CMakeFiles/minidb_lib.dir/flags.make
 CMakeFiles/minidb_lib.dir/parser.cpp.obj: CMakeFiles/minidb_lib.dir/includes_CXX.rsp
-CMakeFiles/minidb_lib.dir/parser.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Engine/parser.cpp
+CMakeFiles/minidb_lib.dir/parser.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Enginee/parser.cpp
 CMakeFiles/minidb_lib.dir/parser.cpp.obj: CMakeFiles/minidb_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/minidb_lib.dir/parser.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/parser.cpp.obj -MF CMakeFiles\minidb_lib.dir\parser.cpp.obj.d -o CMakeFiles\minidb_lib.dir\parser.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Engine\parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/minidb_lib.dir/parser.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/parser.cpp.obj -MF CMakeFiles\minidb_lib.dir\parser.cpp.obj.d -o CMakeFiles\minidb_lib.dir\parser.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Enginee\parser.cpp
 
 CMakeFiles/minidb_lib.dir/parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minidb_lib.dir/parser.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Engine\parser.cpp > CMakeFiles\minidb_lib.dir\parser.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Enginee\parser.cpp > CMakeFiles\minidb_lib.dir\parser.cpp.i
 
 CMakeFiles/minidb_lib.dir/parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minidb_lib.dir/parser.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Engine\parser.cpp -o CMakeFiles\minidb_lib.dir\parser.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Enginee\parser.cpp -o CMakeFiles\minidb_lib.dir\parser.cpp.s
 
 CMakeFiles/minidb_lib.dir/persistence.cpp.obj: CMakeFiles/minidb_lib.dir/flags.make
 CMakeFiles/minidb_lib.dir/persistence.cpp.obj: CMakeFiles/minidb_lib.dir/includes_CXX.rsp
-CMakeFiles/minidb_lib.dir/persistence.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Engine/persistence.cpp
+CMakeFiles/minidb_lib.dir/persistence.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Enginee/persistence.cpp
 CMakeFiles/minidb_lib.dir/persistence.cpp.obj: CMakeFiles/minidb_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/minidb_lib.dir/persistence.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/persistence.cpp.obj -MF CMakeFiles\minidb_lib.dir\persistence.cpp.obj.d -o CMakeFiles\minidb_lib.dir\persistence.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Engine\persistence.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/minidb_lib.dir/persistence.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/persistence.cpp.obj -MF CMakeFiles\minidb_lib.dir\persistence.cpp.obj.d -o CMakeFiles\minidb_lib.dir\persistence.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Enginee\persistence.cpp
 
 CMakeFiles/minidb_lib.dir/persistence.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minidb_lib.dir/persistence.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Engine\persistence.cpp > CMakeFiles\minidb_lib.dir\persistence.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Enginee\persistence.cpp > CMakeFiles\minidb_lib.dir\persistence.cpp.i
 
 CMakeFiles/minidb_lib.dir/persistence.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minidb_lib.dir/persistence.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Engine\persistence.cpp -o CMakeFiles\minidb_lib.dir\persistence.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Enginee\persistence.cpp -o CMakeFiles\minidb_lib.dir\persistence.cpp.s
 
 CMakeFiles/minidb_lib.dir/sorted_array_index.cpp.obj: CMakeFiles/minidb_lib.dir/flags.make
 CMakeFiles/minidb_lib.dir/sorted_array_index.cpp.obj: CMakeFiles/minidb_lib.dir/includes_CXX.rsp
-CMakeFiles/minidb_lib.dir/sorted_array_index.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Engine/sorted_array_index.cpp
+CMakeFiles/minidb_lib.dir/sorted_array_index.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Enginee/sorted_array_index.cpp
 CMakeFiles/minidb_lib.dir/sorted_array_index.cpp.obj: CMakeFiles/minidb_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/minidb_lib.dir/sorted_array_index.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/sorted_array_index.cpp.obj -MF CMakeFiles\minidb_lib.dir\sorted_array_index.cpp.obj.d -o CMakeFiles\minidb_lib.dir\sorted_array_index.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Engine\sorted_array_index.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/minidb_lib.dir/sorted_array_index.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/sorted_array_index.cpp.obj -MF CMakeFiles\minidb_lib.dir\sorted_array_index.cpp.obj.d -o CMakeFiles\minidb_lib.dir\sorted_array_index.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Enginee\sorted_array_index.cpp
 
 CMakeFiles/minidb_lib.dir/sorted_array_index.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minidb_lib.dir/sorted_array_index.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Engine\sorted_array_index.cpp > CMakeFiles\minidb_lib.dir\sorted_array_index.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Enginee\sorted_array_index.cpp > CMakeFiles\minidb_lib.dir\sorted_array_index.cpp.i
 
 CMakeFiles/minidb_lib.dir/sorted_array_index.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minidb_lib.dir/sorted_array_index.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Engine\sorted_array_index.cpp -o CMakeFiles\minidb_lib.dir\sorted_array_index.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Enginee\sorted_array_index.cpp -o CMakeFiles\minidb_lib.dir\sorted_array_index.cpp.s
 
 CMakeFiles/minidb_lib.dir/src/avl_index.cpp.obj: CMakeFiles/minidb_lib.dir/flags.make
 CMakeFiles/minidb_lib.dir/src/avl_index.cpp.obj: CMakeFiles/minidb_lib.dir/includes_CXX.rsp
-CMakeFiles/minidb_lib.dir/src/avl_index.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Engine/src/avl_index.cpp
+CMakeFiles/minidb_lib.dir/src/avl_index.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Enginee/src/avl_index.cpp
 CMakeFiles/minidb_lib.dir/src/avl_index.cpp.obj: CMakeFiles/minidb_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/minidb_lib.dir/src/avl_index.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/src/avl_index.cpp.obj -MF CMakeFiles\minidb_lib.dir\src\avl_index.cpp.obj.d -o CMakeFiles\minidb_lib.dir\src\avl_index.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Engine\src\avl_index.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/minidb_lib.dir/src/avl_index.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minidb_lib.dir/src/avl_index.cpp.obj -MF CMakeFiles\minidb_lib.dir\src\avl_index.cpp.obj.d -o CMakeFiles\minidb_lib.dir\src\avl_index.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Enginee\src\avl_index.cpp
 
 CMakeFiles/minidb_lib.dir/src/avl_index.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minidb_lib.dir/src/avl_index.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Engine\src\avl_index.cpp > CMakeFiles\minidb_lib.dir\src\avl_index.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Enginee\src\avl_index.cpp > CMakeFiles\minidb_lib.dir\src\avl_index.cpp.i
 
 CMakeFiles/minidb_lib.dir/src/avl_index.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minidb_lib.dir/src/avl_index.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Engine\src\avl_index.cpp -o CMakeFiles\minidb_lib.dir\src\avl_index.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Enginee\src\avl_index.cpp -o CMakeFiles\minidb_lib.dir\src\avl_index.cpp.s
 
 # Object files for target minidb_lib
 minidb_lib_OBJECTS = \
@@ -215,7 +215,7 @@ libminidb_lib.a: CMakeFiles/minidb_lib.dir/sorted_array_index.cpp.obj
 libminidb_lib.a: CMakeFiles/minidb_lib.dir/src/avl_index.cpp.obj
 libminidb_lib.a: CMakeFiles/minidb_lib.dir/build.make
 libminidb_lib.a: CMakeFiles/minidb_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libminidb_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libminidb_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\minidb_lib.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\minidb_lib.dir\link.txt --verbose=$(VERBOSE)
 
@@ -228,6 +228,6 @@ CMakeFiles/minidb_lib.dir/clean:
 .PHONY : CMakeFiles/minidb_lib.dir/clean
 
 CMakeFiles/minidb_lib.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ADMIN\Documents\GitHub\Database-Engine C:\Users\ADMIN\Documents\GitHub\Database-Engine C:\Users\ADMIN\Documents\GitHub\Database-Engine\build C:\Users\ADMIN\Documents\GitHub\Database-Engine\build C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles\minidb_lib.dir\DependInfo.cmake "--color=$(COLOR)" minidb_lib
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ADMIN\Documents\GitHub\Database-Enginee C:\Users\ADMIN\Documents\GitHub\Database-Enginee C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles\minidb_lib.dir\DependInfo.cmake "--color=$(COLOR)" minidb_lib
 .PHONY : CMakeFiles/minidb_lib.dir/depend
 

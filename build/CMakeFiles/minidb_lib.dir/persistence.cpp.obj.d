@@ -1,6 +1,6 @@
 CMakeFiles/minidb_lib.dir/persistence.cpp.obj: \
- C:\Users\ADMIN\Documents\GitHub\Database-Engine\persistence.cpp \
- C:\Users\ADMIN\Documents\GitHub\Database-Engine\persistence.h \
+ C:\Users\ADMIN\Documents\GitHub\Database-Enginee\persistence.cpp \
+ C:\Users\ADMIN\Documents\GitHub\Database-Enginee\persistence.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \
@@ -81,7 +81,7 @@ CMakeFiles/minidb_lib.dir/persistence.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
- C:/Users/ADMIN/Documents/GitHub/Database-Engine/include/common.h \
+ C:/Users/ADMIN/Documents/GitHub/Database-Enginee/include/common.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\utility \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_relops.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\fstream \
