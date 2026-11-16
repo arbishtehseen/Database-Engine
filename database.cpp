@@ -1,20 +1,35 @@
 #include "database.h"
+#include "persistence.h"
 #include "sorting.h"
 #include <limits>
+#include <sstream>
 #include <stdexcept>
 #include <utility>
+#include <vector>
 
 Database::Database(const std::string& fileName,
-                   std::unique_ptr<Index> indexToUse)
-    : file(fileName), index(std::move(indexToUse)) {
+                   std::unique_ptr<Index> indexToUse,
+                   std::size_t cacheCapacity)
+    : file(fileName), index(std::move(indexToUse)), cache(cacheCapacity) {
     if (!index) {
         throw std::invalid_argument("Database needs an index");
     }
-    // HOOK: persistence - load records from `file` into the index here.
+    if (!file.empty()) {
+        std::vector<KeyValue> loaded;
+        if (Persistence::Load(file, &loaded)) {
+            for (const KeyValue& kv : loaded) {
+                index->Put(kv.first, kv.second);
+            }
+        }
+    }
 }
 
 Database::~Database() {
-    // HOOK: persistence - save every record to `file` here.
+    if (!file.empty()) {
+        std::vector<KeyValue> all = index->Range(
+            std::numeric_limits<Key>::min(), std::numeric_limits<Key>::max());
+        Persistence::Save(file, all);
+    }
 }
 
 bool Database::Put(Key key, const std::string& value) {
@@ -22,7 +37,6 @@ bool Database::Put(Key key, const std::string& value) {
     bool existed = index->Get(key, &oldValue);
     index->Put(key, value);
 
-    // Remember how to reverse this change.
     UndoEntry entry;
     entry.key = key;
     if (existed) {
@@ -33,14 +47,27 @@ bool Database::Put(Key key, const std::string& value) {
     }
     undoStack.Push(entry);
 
-    // HOOK: cache - store (key, value) in the cache here.
+    cache.Put(key, value);
+
+    if (!file.empty()) {
+        std::vector<KeyValue> all = index->Range(
+            std::numeric_limits<Key>::min(), std::numeric_limits<Key>::max());
+        Persistence::Save(file, all);
+    }
     return !existed;
 }
 
 bool Database::Get(Key key, std::string* out) {
-    // HOOK: cache - look in the cache first and return on a hit.
+    // 1. Pehle cache mein check karein
+    if (cache.Get(key, out)) {
+        return true;
+    }
+
+    // 2. Cache miss par index se nikalein aur cache mein save karein
     bool found = index->Get(key, out);
-    // HOOK: cache - on a miss that found the key, store it in the cache.
+    if (found && out != nullptr) {
+        cache.Put(key, *out);
+    }
     return found;
 }
 
@@ -57,12 +84,17 @@ bool Database::Delete(Key key) {
     entry.value = oldValue;
     undoStack.Push(entry);
 
-    // HOOK: cache - remove the key from the cache here.
+    cache.Remove(key);
+
+    if (!file.empty()) {
+        std::vector<KeyValue> all = index->Range(
+            std::numeric_limits<Key>::min(), std::numeric_limits<Key>::max());
+        Persistence::Save(file, all);
+    }
     return true;
 }
 
 std::vector<KeyValue> Database::Scan(Key lo, Key hi) {
-    // The cache is not used for range scans.
     return index->Range(lo, hi);
 }
 
@@ -83,13 +115,18 @@ bool Database::Undo() {
     if (!undoStack.Pop(&entry)) {
         return false;
     }
-    // Apply directly to the index. This must NOT push a new undo entry.
     if (entry.action == UndoAction::RESTORE) {
         index->Put(entry.key, entry.value);
-        // HOOK: cache - store the restored value in the cache here.
+        cache.Put(entry.key, entry.value);
     } else {
         index->Remove(entry.key);
-        // HOOK: cache - remove the key from the cache here.
+        cache.Remove(entry.key);
+    }
+
+    if (!file.empty()) {
+        std::vector<KeyValue> all = index->Range(
+            std::numeric_limits<Key>::min(), std::numeric_limits<Key>::max());
+        Persistence::Save(file, all);
     }
     return true;
 }
@@ -100,6 +137,14 @@ std::size_t Database::Size() const {
 
 std::size_t Database::UndoDepth() const {
     return undoStack.Size();
+}
+
+std::string Database::CacheStats() const {
+    std::ostringstream oss;
+    oss << cache.Size() << "/" << cache.Capacity()
+        << " (hits: " << cache.Hits()
+        << ", misses: " << cache.Misses() << ")";
+    return oss.str();
 }
 
 const std::string& Database::FileName() const {

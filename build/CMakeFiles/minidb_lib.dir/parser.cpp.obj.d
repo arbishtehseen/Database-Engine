@@ -1,7 +1,7 @@
 CMakeFiles/minidb_lib.dir/parser.cpp.obj: \
- C:\Users\ADMIN\Documents\GitHub\Database-Engine\parser.cpp \
- C:\Users\ADMIN\Documents\GitHub\Database-Engine\parser.h \
- C:/Users/ADMIN/Documents/GitHub/Database-Engine/include/common.h \
+ C:\Users\ADMIN\Documents\GitHub\Database-Enginee\parser.cpp \
+ C:\Users\ADMIN\Documents\GitHub\Database-Enginee\parser.h \
+ C:/Users/ADMIN/Documents/GitHub/Database-Enginee/include/common.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdint \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \

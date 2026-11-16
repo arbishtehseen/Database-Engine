@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ADMIN\Documents\GitHub\Database-Engine
+CMAKE_SOURCE_DIR = C:\Users\ADMIN\Documents\GitHub\Database-Enginee
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ADMIN\Documents\GitHub\Database-Engine\build
+CMAKE_BINARY_DIR = C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_sorted_array_index.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/test_sorted_array_index.dir/codegen:
 
 CMakeFiles/test_sorted_array_index.dir/test_sorted_array_index.cpp.obj: CMakeFiles/test_sorted_array_index.dir/flags.make
 CMakeFiles/test_sorted_array_index.dir/test_sorted_array_index.cpp.obj: CMakeFiles/test_sorted_array_index.dir/includes_CXX.rsp
-CMakeFiles/test_sorted_array_index.dir/test_sorted_array_index.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Engine/test_sorted_array_index.cpp
+CMakeFiles/test_sorted_array_index.dir/test_sorted_array_index.cpp.obj: C:/Users/ADMIN/Documents/GitHub/Database-Enginee/test_sorted_array_index.cpp
 CMakeFiles/test_sorted_array_index.dir/test_sorted_array_index.cpp.obj: CMakeFiles/test_sorted_array_index.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_sorted_array_index.dir/test_sorted_array_index.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_sorted_array_index.dir/test_sorted_array_index.cpp.obj -MF CMakeFiles\test_sorted_array_index.dir\test_sorted_array_index.cpp.obj.d -o CMakeFiles\test_sorted_array_index.dir\test_sorted_array_index.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Engine\test_sorted_array_index.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_sorted_array_index.dir/test_sorted_array_index.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_sorted_array_index.dir/test_sorted_array_index.cpp.obj -MF CMakeFiles\test_sorted_array_index.dir\test_sorted_array_index.cpp.obj.d -o CMakeFiles\test_sorted_array_index.dir\test_sorted_array_index.cpp.obj -c C:\Users\ADMIN\Documents\GitHub\Database-Enginee\test_sorted_array_index.cpp
 
 CMakeFiles/test_sorted_array_index.dir/test_sorted_array_index.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_sorted_array_index.dir/test_sorted_array_index.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Engine\test_sorted_array_index.cpp > CMakeFiles\test_sorted_array_index.dir\test_sorted_array_index.cpp.i
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ADMIN\Documents\GitHub\Database-Enginee\test_sorted_array_index.cpp > CMakeFiles\test_sorted_array_index.dir\test_sorted_array_index.cpp.i
 
 CMakeFiles/test_sorted_array_index.dir/test_sorted_array_index.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_sorted_array_index.dir/test_sorted_array_index.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Engine\test_sorted_array_index.cpp -o CMakeFiles\test_sorted_array_index.dir\test_sorted_array_index.cpp.s
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ADMIN\Documents\GitHub\Database-Enginee\test_sorted_array_index.cpp -o CMakeFiles\test_sorted_array_index.dir\test_sorted_array_index.cpp.s
 
 # Object files for target test_sorted_array_index
 test_sorted_array_index_OBJECTS = \
@@ -99,7 +99,7 @@ test_sorted_array_index.exe: libminidb_lib.a
 test_sorted_array_index.exe: CMakeFiles/test_sorted_array_index.dir/linkLibs.rsp
 test_sorted_array_index.exe: CMakeFiles/test_sorted_array_index.dir/objects1.rsp
 test_sorted_array_index.exe: CMakeFiles/test_sorted_array_index.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_sorted_array_index.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_sorted_array_index.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\test_sorted_array_index.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -111,6 +111,6 @@ CMakeFiles/test_sorted_array_index.dir/clean:
 .PHONY : CMakeFiles/test_sorted_array_index.dir/clean
 
 CMakeFiles/test_sorted_array_index.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ADMIN\Documents\GitHub\Database-Engine C:\Users\ADMIN\Documents\GitHub\Database-Engine C:\Users\ADMIN\Documents\GitHub\Database-Engine\build C:\Users\ADMIN\Documents\GitHub\Database-Engine\build C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles\test_sorted_array_index.dir\DependInfo.cmake "--color=$(COLOR)" test_sorted_array_index
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ADMIN\Documents\GitHub\Database-Enginee C:\Users\ADMIN\Documents\GitHub\Database-Enginee C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles\test_sorted_array_index.dir\DependInfo.cmake "--color=$(COLOR)" test_sorted_array_index
 .PHONY : CMakeFiles/test_sorted_array_index.dir/depend
 

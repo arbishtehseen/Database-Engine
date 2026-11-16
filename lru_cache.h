@@ -39,6 +39,7 @@ public:
     size_t Hits() const { return hits_; }
     size_t Misses() const { return misses_; }
     size_t Size() const { return size_; }
+    size_t Capacity() const { return capacity_; }
 
 private:
     // One entry of the doubly linked list.

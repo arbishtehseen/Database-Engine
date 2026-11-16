@@ -1,6 +1,6 @@
 CMakeFiles/test_sorting.dir/test_sorting.cpp.obj: \
- C:\Users\ADMIN\Documents\GitHub\Database-Engine\test_sorting.cpp \
- C:/Users/ADMIN/Documents/GitHub/Database-Engine/include/common.h \
+ C:\Users\ADMIN\Documents\GitHub\Database-Enginee\test_sorting.cpp \
+ C:/Users/ADMIN/Documents/GitHub/Database-Enginee/include/common.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdint \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \
@@ -77,7 +77,7 @@ CMakeFiles/test_sorting.dir/test_sorting.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\utility \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_relops.h \
- C:\Users\ADMIN\Documents\GitHub\Database-Engine\sorting.h \
+ C:\Users\ADMIN\Documents\GitHub\Database-Enginee\sorting.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstddef \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h \

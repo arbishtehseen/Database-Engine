@@ -1,12 +1,12 @@
 CMakeFiles/test_stack_queue.dir/test_stack_queue.cpp.obj: \
- C:\Users\ADMIN\Documents\GitHub\Database-Engine\test_stack_queue.cpp \
- C:\Users\ADMIN\Documents\GitHub\Database-Engine\circular_queue.h \
+ C:\Users\ADMIN\Documents\GitHub\Database-Enginee\test_stack_queue.cpp \
+ C:\Users\ADMIN\Documents\GitHub\Database-Enginee\circular_queue.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstddef \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\cpu_defines.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\stddef.h \
- C:\Users\ADMIN\Documents\GitHub\Database-Engine\stack.h \
+ C:\Users\ADMIN\Documents\GitHub\Database-Enginee\stack.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\utility \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_relops.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_pair.h \

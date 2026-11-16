@@ -98,7 +98,7 @@ void RunCli(Database& db, std::istream& in, std::ostream& out,
             case CommandType::STATS:
                 out << "records: " << db.Size()
                     << " | undo steps: " << db.UndoDepth()
-                    << " | cache: not added yet\n";
+                    << " | cache: " << db.CacheStats() << "\n";
                 break;
             case CommandType::EXIT:
                 out << "Goodbye.\n";

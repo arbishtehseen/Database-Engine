@@ -53,10 +53,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ADMIN\Documents\GitHub\Database-Engine
+CMAKE_SOURCE_DIR = C:\Users\ADMIN\Documents\GitHub\Database-Enginee
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ADMIN\Documents\GitHub\Database-Engine\build
+CMAKE_BINARY_DIR = C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -120,14 +120,14 @@ clean: CMakeFiles/test_stack_queue.dir/clean
 CMakeFiles/minidb_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minidb_lib.dir\build.make CMakeFiles/minidb_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minidb_lib.dir\build.make CMakeFiles/minidb_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target minidb_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target minidb_lib"
 .PHONY : CMakeFiles/minidb_lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/minidb_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/minidb_lib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 0
 .PHONY : CMakeFiles/minidb_lib.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ minidb_lib: CMakeFiles/minidb_lib.dir/rule
 # codegen rule for target.
 CMakeFiles/minidb_lib.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minidb_lib.dir\build.make CMakeFiles/minidb_lib.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Finished codegen for target minidb_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Finished codegen for target minidb_lib"
 .PHONY : CMakeFiles/minidb_lib.dir/codegen
 
 # clean rule for target.
@@ -152,14 +152,14 @@ CMakeFiles/minidb_lib.dir/clean:
 CMakeFiles/minidb.dir/all: CMakeFiles/minidb_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minidb.dir\build.make CMakeFiles/minidb.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minidb.dir\build.make CMakeFiles/minidb.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=1,2 "Built target minidb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=1,2 "Built target minidb"
 .PHONY : CMakeFiles/minidb.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/minidb.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/minidb.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 0
 .PHONY : CMakeFiles/minidb.dir/rule
 
 # Convenience name for target.
@@ -169,7 +169,7 @@ minidb: CMakeFiles/minidb.dir/rule
 # codegen rule for target.
 CMakeFiles/minidb.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minidb.dir\build.make CMakeFiles/minidb.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=1,2 "Finished codegen for target minidb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=1,2 "Finished codegen for target minidb"
 .PHONY : CMakeFiles/minidb.dir/codegen
 
 # clean rule for target.
@@ -184,14 +184,14 @@ CMakeFiles/minidb.dir/clean:
 CMakeFiles/test_cli.dir/all: CMakeFiles/minidb_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_cli.dir\build.make CMakeFiles/test_cli.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_cli.dir\build.make CMakeFiles/test_cli.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=12,13 "Built target test_cli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=12,13 "Built target test_cli"
 .PHONY : CMakeFiles/test_cli.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_cli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_cli.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_cli.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ test_cli: CMakeFiles/test_cli.dir/rule
 # codegen rule for target.
 CMakeFiles/test_cli.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_cli.dir\build.make CMakeFiles/test_cli.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=12,13 "Finished codegen for target test_cli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=12,13 "Finished codegen for target test_cli"
 .PHONY : CMakeFiles/test_cli.dir/codegen
 
 # clean rule for target.
@@ -216,14 +216,14 @@ CMakeFiles/test_cli.dir/clean:
 CMakeFiles/test_database.dir/all: CMakeFiles/minidb_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_database.dir\build.make CMakeFiles/test_database.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_database.dir\build.make CMakeFiles/test_database.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=14,15 "Built target test_database"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=14,15 "Built target test_database"
 .PHONY : CMakeFiles/test_database.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_database.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_database.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_database.dir/rule
 
 # Convenience name for target.
@@ -233,7 +233,7 @@ test_database: CMakeFiles/test_database.dir/rule
 # codegen rule for target.
 CMakeFiles/test_database.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_database.dir\build.make CMakeFiles/test_database.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=14,15 "Finished codegen for target test_database"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=14,15 "Finished codegen for target test_database"
 .PHONY : CMakeFiles/test_database.dir/codegen
 
 # clean rule for target.
@@ -248,14 +248,14 @@ CMakeFiles/test_database.dir/clean:
 CMakeFiles/test_hash_table.dir/all: CMakeFiles/minidb_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_hash_table.dir\build.make CMakeFiles/test_hash_table.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_hash_table.dir\build.make CMakeFiles/test_hash_table.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=16,17 "Built target test_hash_table"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=16,17 "Built target test_hash_table"
 .PHONY : CMakeFiles/test_hash_table.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_hash_table.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_hash_table.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_hash_table.dir/rule
 
 # Convenience name for target.
@@ -265,7 +265,7 @@ test_hash_table: CMakeFiles/test_hash_table.dir/rule
 # codegen rule for target.
 CMakeFiles/test_hash_table.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_hash_table.dir\build.make CMakeFiles/test_hash_table.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=16,17 "Finished codegen for target test_hash_table"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=16,17 "Finished codegen for target test_hash_table"
 .PHONY : CMakeFiles/test_hash_table.dir/codegen
 
 # clean rule for target.
@@ -280,14 +280,14 @@ CMakeFiles/test_hash_table.dir/clean:
 CMakeFiles/test_index_crosscheck.dir/all: CMakeFiles/minidb_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_index_crosscheck.dir\build.make CMakeFiles/test_index_crosscheck.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_index_crosscheck.dir\build.make CMakeFiles/test_index_crosscheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=18,19 "Built target test_index_crosscheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=18,19 "Built target test_index_crosscheck"
 .PHONY : CMakeFiles/test_index_crosscheck.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_index_crosscheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_index_crosscheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_index_crosscheck.dir/rule
 
 # Convenience name for target.
@@ -297,7 +297,7 @@ test_index_crosscheck: CMakeFiles/test_index_crosscheck.dir/rule
 # codegen rule for target.
 CMakeFiles/test_index_crosscheck.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_index_crosscheck.dir\build.make CMakeFiles/test_index_crosscheck.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=18,19 "Finished codegen for target test_index_crosscheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=18,19 "Finished codegen for target test_index_crosscheck"
 .PHONY : CMakeFiles/test_index_crosscheck.dir/codegen
 
 # clean rule for target.
@@ -312,14 +312,14 @@ CMakeFiles/test_index_crosscheck.dir/clean:
 CMakeFiles/test_linked_list_index.dir/all: CMakeFiles/minidb_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_linked_list_index.dir\build.make CMakeFiles/test_linked_list_index.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_linked_list_index.dir\build.make CMakeFiles/test_linked_list_index.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=20,21 "Built target test_linked_list_index"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=20,21 "Built target test_linked_list_index"
 .PHONY : CMakeFiles/test_linked_list_index.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_linked_list_index.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_linked_list_index.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_linked_list_index.dir/rule
 
 # Convenience name for target.
@@ -329,7 +329,7 @@ test_linked_list_index: CMakeFiles/test_linked_list_index.dir/rule
 # codegen rule for target.
 CMakeFiles/test_linked_list_index.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_linked_list_index.dir\build.make CMakeFiles/test_linked_list_index.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=20,21 "Finished codegen for target test_linked_list_index"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=20,21 "Finished codegen for target test_linked_list_index"
 .PHONY : CMakeFiles/test_linked_list_index.dir/codegen
 
 # clean rule for target.
@@ -344,14 +344,14 @@ CMakeFiles/test_linked_list_index.dir/clean:
 CMakeFiles/test_lru_cache.dir/all: CMakeFiles/minidb_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_lru_cache.dir\build.make CMakeFiles/test_lru_cache.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_lru_cache.dir\build.make CMakeFiles/test_lru_cache.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=22,23 "Built target test_lru_cache"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=22,23 "Built target test_lru_cache"
 .PHONY : CMakeFiles/test_lru_cache.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_lru_cache.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_lru_cache.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_lru_cache.dir/rule
 
 # Convenience name for target.
@@ -361,7 +361,7 @@ test_lru_cache: CMakeFiles/test_lru_cache.dir/rule
 # codegen rule for target.
 CMakeFiles/test_lru_cache.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_lru_cache.dir\build.make CMakeFiles/test_lru_cache.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=22,23 "Finished codegen for target test_lru_cache"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=22,23 "Finished codegen for target test_lru_cache"
 .PHONY : CMakeFiles/test_lru_cache.dir/codegen
 
 # clean rule for target.
@@ -376,14 +376,14 @@ CMakeFiles/test_lru_cache.dir/clean:
 CMakeFiles/test_parser.dir/all: CMakeFiles/minidb_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_parser.dir\build.make CMakeFiles/test_parser.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_parser.dir\build.make CMakeFiles/test_parser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=24,25 "Built target test_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=24,25 "Built target test_parser"
 .PHONY : CMakeFiles/test_parser.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_parser.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_parser.dir/rule
 
 # Convenience name for target.
@@ -393,7 +393,7 @@ test_parser: CMakeFiles/test_parser.dir/rule
 # codegen rule for target.
 CMakeFiles/test_parser.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_parser.dir\build.make CMakeFiles/test_parser.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=24,25 "Finished codegen for target test_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=24,25 "Finished codegen for target test_parser"
 .PHONY : CMakeFiles/test_parser.dir/codegen
 
 # clean rule for target.
@@ -408,14 +408,14 @@ CMakeFiles/test_parser.dir/clean:
 CMakeFiles/test_persistence.dir/all: CMakeFiles/minidb_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_persistence.dir\build.make CMakeFiles/test_persistence.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_persistence.dir\build.make CMakeFiles/test_persistence.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=26,27 "Built target test_persistence"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=26,27 "Built target test_persistence"
 .PHONY : CMakeFiles/test_persistence.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_persistence.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_persistence.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_persistence.dir/rule
 
 # Convenience name for target.
@@ -425,7 +425,7 @@ test_persistence: CMakeFiles/test_persistence.dir/rule
 # codegen rule for target.
 CMakeFiles/test_persistence.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_persistence.dir\build.make CMakeFiles/test_persistence.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=26,27 "Finished codegen for target test_persistence"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=26,27 "Finished codegen for target test_persistence"
 .PHONY : CMakeFiles/test_persistence.dir/codegen
 
 # clean rule for target.
@@ -440,14 +440,14 @@ CMakeFiles/test_persistence.dir/clean:
 CMakeFiles/test_sorted_array_index.dir/all: CMakeFiles/minidb_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_sorted_array_index.dir\build.make CMakeFiles/test_sorted_array_index.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_sorted_array_index.dir\build.make CMakeFiles/test_sorted_array_index.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=28,29 "Built target test_sorted_array_index"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=28,29 "Built target test_sorted_array_index"
 .PHONY : CMakeFiles/test_sorted_array_index.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_sorted_array_index.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_sorted_array_index.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_sorted_array_index.dir/rule
 
 # Convenience name for target.
@@ -457,7 +457,7 @@ test_sorted_array_index: CMakeFiles/test_sorted_array_index.dir/rule
 # codegen rule for target.
 CMakeFiles/test_sorted_array_index.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_sorted_array_index.dir\build.make CMakeFiles/test_sorted_array_index.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=28,29 "Finished codegen for target test_sorted_array_index"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=28,29 "Finished codegen for target test_sorted_array_index"
 .PHONY : CMakeFiles/test_sorted_array_index.dir/codegen
 
 # clean rule for target.
@@ -472,14 +472,14 @@ CMakeFiles/test_sorted_array_index.dir/clean:
 CMakeFiles/test_sorting.dir/all: CMakeFiles/minidb_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_sorting.dir\build.make CMakeFiles/test_sorting.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_sorting.dir\build.make CMakeFiles/test_sorting.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=30,31 "Built target test_sorting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=30,31 "Built target test_sorting"
 .PHONY : CMakeFiles/test_sorting.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_sorting.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_sorting.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_sorting.dir/rule
 
 # Convenience name for target.
@@ -489,7 +489,7 @@ test_sorting: CMakeFiles/test_sorting.dir/rule
 # codegen rule for target.
 CMakeFiles/test_sorting.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_sorting.dir\build.make CMakeFiles/test_sorting.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=30,31 "Finished codegen for target test_sorting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=30,31 "Finished codegen for target test_sorting"
 .PHONY : CMakeFiles/test_sorting.dir/codegen
 
 # clean rule for target.
@@ -504,14 +504,14 @@ CMakeFiles/test_sorting.dir/clean:
 CMakeFiles/test_stack_queue.dir/all: CMakeFiles/minidb_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_stack_queue.dir\build.make CMakeFiles/test_stack_queue.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_stack_queue.dir\build.make CMakeFiles/test_stack_queue.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=32,33 "Built target test_stack_queue"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=32,33 "Built target test_stack_queue"
 .PHONY : CMakeFiles/test_stack_queue.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_stack_queue.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_stack_queue.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_stack_queue.dir/rule
 
 # Convenience name for target.
@@ -521,7 +521,7 @@ test_stack_queue: CMakeFiles/test_stack_queue.dir/rule
 # codegen rule for target.
 CMakeFiles/test_stack_queue.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_stack_queue.dir\build.make CMakeFiles/test_stack_queue.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Engine\build\CMakeFiles --progress-num=32,33 "Finished codegen for target test_stack_queue"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ADMIN\Documents\GitHub\Database-Enginee\build\CMakeFiles --progress-num=32,33 "Finished codegen for target test_stack_queue"
 .PHONY : CMakeFiles/test_stack_queue.dir/codegen
 
 # clean rule for target.

@@ -1,5 +1,5 @@
 CMakeFiles/minidb_lib.dir/src/avl_index.cpp.obj: \
- C:\Users\ADMIN\Documents\GitHub\Database-Engine\src\avl_index.cpp \
+ C:\Users\ADMIN\Documents\GitHub\Database-Enginee\src\avl_index.cpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\utility \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
@@ -44,9 +44,9 @@ CMakeFiles/minidb_lib.dir/src/avl_index.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\memoryfwd.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\limits \
- C:/Users/ADMIN/Documents/GitHub/Database-Engine/include/avl_index.h \
- C:/Users/ADMIN/Documents/GitHub/Database-Engine/include/index.h \
- C:/Users/ADMIN/Documents/GitHub/Database-Engine/include/common.h \
+ C:/Users/ADMIN/Documents/GitHub/Database-Enginee/include/avl_index.h \
+ C:/Users/ADMIN/Documents/GitHub/Database-Enginee/include/index.h \
+ C:/Users/ADMIN/Documents/GitHub/Database-Enginee/include/common.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdint \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\stdint.h \
  c:\mingw\include\stdint.h \

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/ADMIN/Documents/GitHub/Database-Engine/test_stack_queue.cpp" "CMakeFiles/test_stack_queue.dir/test_stack_queue.cpp.obj" "gcc" "CMakeFiles/test_stack_queue.dir/test_stack_queue.cpp.obj.d"
+  "C:/Users/ADMIN/Documents/GitHub/Database-Enginee/test_stack_queue.cpp" "CMakeFiles/test_stack_queue.dir/test_stack_queue.cpp.obj" "gcc" "CMakeFiles/test_stack_queue.dir/test_stack_queue.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
